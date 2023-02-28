@@ -18,13 +18,13 @@ export default function DetailCharity() {
 
     let { data: charity,refetch } = useQuery('charityCache', async () => {
         const respCharity = await API.get(`/charity/${id}`)
-        console.log(respCharity);
+        console.log("respCharity", respCharity);
         return respCharity.data.data
     })
 
     let { data: trans } = useQuery('transCache', async () => {
         const respTrans = await API.get(`/transactions-charity/${id}`)
-        console.log(respTrans);
+        console.log("transaksi charity", respTrans);
         return respTrans.data.data
     })
 
