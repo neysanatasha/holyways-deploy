@@ -25,6 +25,7 @@ export default function ModalTransaction(props) {
 
             const body = JSON.stringify(form)
             const response = await API.post("/transaction", body, config)
+            console.log("resp transaksi", response)
             console.log(response.data.data.token);
             const token = response.data.data.token;
 
