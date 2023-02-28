@@ -157,7 +157,7 @@ export default function ModalLoginRegister({ show, setShow }) {
                 </Modal.Body>
                 <Modal.Body>
                     <Form.Label
-                        className='mx-0'>don't have an account? click <Link
+                        className='mx-0'>Don't have an account? Click <Link
                             style={{ textDecoration: "none" }}
                             className='fw-bold text-dark'
                             onClick={handleSwitchRegister}
@@ -213,7 +213,7 @@ export default function ModalLoginRegister({ show, setShow }) {
                     </Form>
                 </Modal.Body>
                 <Modal.Body>
-                    <Form.Label className='text-center'>already have an account? click <Link
+                    <Form.Label className='text-center'>Already have an account? Click <Link
                         style={{ textDecoration: "none" }}
                         className='fw-bold text-dark'
                         onClick={handleSwitchLogin}

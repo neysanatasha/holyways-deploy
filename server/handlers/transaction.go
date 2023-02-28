@@ -85,7 +85,7 @@ func (h *handlerTransaction) CreateTransaction(w http.ResponseWriter, r *http.Re
 	}
 	fmt.Println("data transaction", dataTransactions.FunderID)
 	var s = snap.Client{}
-	s.New("SB-Mid-server-Qtd2RPz_bY7GMgXAVAEAliJ8", midtrans.Sandbox)
+	s.New("SB-Mid-server-svkQKAxHIfwMPXNdn6487e75", midtrans.Sandbox)
 	req := &snap.Request{
 		TransactionDetails: midtrans.TransactionDetails{
 			OrderID:  strconv.Itoa(dataTransactions.ID),
@@ -261,10 +261,10 @@ func SendMail(status string, transaction models.Transaction) {
 		</style>
 		</head>
 		<body>
-		<h2>Product payment :</h2>
+		<h2>Donate payment :</h2>
 		<ul style="list-style-type:none;">
-		  <li>Thank You For Buying Our Product%s</li>
-		  <li>Total payment: Rp.%s</li>
+		  <li>Thank You For Donate%s</li>
+		  <li>Total donate: Rp.%s</li>
 		  <li>Status : <b>%s</b></li>
 		</ul>
 		</body>
