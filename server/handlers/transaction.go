@@ -26,8 +26,8 @@ import (
 
 // Declare Coreapi Client
 var c = coreapi.Client{
-	ServerKey: "SB-Mid-server-Qtd2RPz_bY7GMgXAVAEAliJ8",
-	ClientKey: "SB-Mid-client-c2bc8ynN7yxUd99M",
+	ServerKey: "SB-Mid-server-svkQKAxHIfwMPXNdn6487e75",
+	ClientKey: "SB-Mid-client-0TgkOGcHkug53xhL",
 }
 
 type handlerTransaction struct {
